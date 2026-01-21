@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI w Inżynierii i Ochronie Środowiska - Projekt TI</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #27ae60;
+            --bg: #f4f4f9;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--bg); }
+        
+        header { background: var(--primary); color: #fff; padding: 2.5rem 0; text-align: center; border-bottom: 5px solid var(--secondary); }
+        
+        nav { background: #34495e; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; cursor: pointer; transition: color 0.3s; }
+        nav a:hover, nav a.active { color: var(--secondary); }
+
+        .container { max-width: 1000px; margin: 30px auto; padding: 40px; background: var(--white); box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-radius: 12px; }
+        
+        /* Ukrywanie sekcji */
+        section { display: none; animation: fadeIn 0.5s ease; }
+        section.active { display: block; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        h2 { color: var(--primary); border-left: 5px solid var(--secondary); padding-left: 15px; margin-bottom: 25px; }
+        h3 { color: var(--secondary); margin-top: 25px; }
+        
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px; }
+        .card { padding: 20px; border: 1px solid #eee; border-radius: 8px; background: #fafafa; transition: border-color 0.3s; }
+        .card:hover { border-color: var(--secondary); }
+        
+        .highlight { color: var(--secondary); font-weight: bold; }
+        .list-style { padding-left: 20px; }
+        .list-style li { margin-bottom: 10px; }
+
+        footer { text-align: center; padding: 30px; background: var(--primary); color: #fff; margin-top: 50px; }
+
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sztuczna Inteligencja w Inżynierii i Ochronie Środowiska</h1>
+    <p>Projekt akademicki - Kurs Technologii Informacyjnej 2026</p>
+</header>
+
+<nav id="main-nav">
+    <a onclick="showSection('opis')" id="nav-opis" class="active">O Projekcie</a>
+    <a onclick="showSection('projektowanie')" id="nav-projektowanie">Projektowanie</a>
+    <a onclick="showSection('diagnostyka')" id="nav-diagnostyka">Diagnostyka</a>
+    <a onclick="showSection('srodowisko')" id="nav-srodowisko">Ochrona Środowiska</a>
+    <a onclick="showSection('zespol')" id="nav-zespol">Nasz Zespół</a>
+</nav>
+
+<div class="container">
+    <section id="opis" class="active">
+        <h2>1. O Projekcie</h2>
+        <p>Projekt przedstawia synergię nowoczesnych algorytmów <strong>Sztucznej Inteligencji (AI)</strong> z praktyką inżynierską. Skupiamy się na tym, jak technologie informatyczne wspierają automatyzację procesów decyzyjnych oraz optymalizację systemów technicznych w duchu zrównoważonego rozwoju.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Cele projektu</h3>
+                <ul class="list-style">
+                    <li>Prezentacja podstawowych pojęć związanych z AI.</li>
+                    <li>Omówienie roli AI w nowoczesnej inżynierii i ekologii.</li>
+                    <li>Pokazanie wpływu technologii na bezpieczeństwo procesów.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Kontekst Akademicki</h3>
+                <p>Praca zrealizowana w ramach studiów na kierunku Technologia Informacyjna. Strona pełni funkcję edukacyjną, prezentując praktyczne zastosowanie wiedzy zdobytej w trakcie kursu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projektowanie">
+        <h2>2. Projektowanie Generatywne</h2>
+        <p>Projektowanie generatywne to metoda, w której inżynier definiuje zestaw wymagań, a system AI samodzielnie generuje tysiące możliwych rozwiązań konstrukcyjnych.</p>
+        
+        
+
+        <div class="grid">
+            <div class="card">
+                <p class="highlight">Jak to działa?</p>
+                <ol>
+                    <li>Określenie wymagań (wytrzymałość, masa, koszt).</li>
+                    <li>Zdefiniowanie ograniczeń materiałowych.</li>
+                    <li>Analiza danych przez algorytm.</li>
+                    <li>Wybór najlepszego wariantu przez inżyniera.</li>
+                </ol>
+            </div>
+            <div class="card">
+                <p class="highlight">Zastosowania i Korzyści</p>
+                <ul class="list-style">
+                    <li><strong>Lotnictwo:</strong> Lekkie i wytrzymałe konstrukcje.</li>
+                    <li><strong>Motoryzacja:</strong> Redukcja masy pojazdów.</li>
+                    <li><strong>Ekologia:</strong> Znaczne zmniejszenie zużycia materiałów.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="diagnostyka">
+        <h2>3. Diagnostyka Techniczna i AI</h2>
+        <p>Współczesna diagnostyka opiera się na ocenie stanu technicznego maszyn w czasie rzeczywistym, zapobiegając awariom zanim one wystąpią.</p>
+        
+        
+
+        <div class="card">
+            <h3>Predykcyjne utrzymanie ruchu (Predictive Maintenance)</h3>
+            <p>AI analizuje dane z czujników (wibracje, temperatura), co pozwala na:</p>
+            <ul class="list-style">
+                <li>Wykrywanie anomalii niewidocznych dla człowieka.</li>
+                <li>Zmniejszenie liczby nieplanowanych przestojów.</li>
+                <li>Wydłużenie żywotności urządzeń i ograniczenie zużycia surowców.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="srodowisko">
+        <h2>4. AI w Ochronie Środowiska</h2>
+        <p>Sztuczna inteligencja staje się kluczowym narzędziem w monitorowaniu i przeciwdziałaniu zmianom klimatu.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <p class="highlight">Monitorowanie i Klimat</p>
+                <ul class="list-style">
+                    <li>Analiza jakości powietrza i wód z czujników IoT.</li>
+                    <li>Prognozowanie zmian klimatu i emisji gazów cieplarnianych.</li>
+                    <li>Optymalizacja rozwoju Odnawialnych Źródeł Energii (OZE).</li>
+                </ul>
+            </div>
+            <div class="card">
+                <p class="highlight">Gospodarka Odpadami</p>
+                <ul class="list-style">
+                    <li>Automatyczna, robotyczna segregacja odpadów.</li>
+                    <li>Optymalizacja procesów recyklingu.</li>
+                    <li>Zmniejszenie strat materiałowych w przemyśle.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="zespol">
+        <h2>5. Nasz Zespół</h2>
+        <p>Projekt jest efektem współpracy zespołowej, gdzie każdy członek odpowiadał za określoną część merytoryczną lub techniczną.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Skład Grupy</h3>
+                <ul class="list-style">
+                    <li><strong>Agnieszka Sosnowska, Oliwia Żułtak</strong> - Lider, Analiza danych</li>
+                    <li><strong>Wiktoria Żywica, Oliwia Rychlicka</strong> - Stworzenie strony </li>
+                    <li><strong>Zuzanna Chuda, Miron Neumann</strong>   - Prezentacja projektu</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Wnioski końcowe</h3>
+                <p>Projekt pozwolił rozwinąć kompetencje techniczne oraz lepiej zrozumieć, jak AI realnie wpływa na rozwój nowoczesnej inżynierii i ochrony planety.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Projekt TI - Uniwersytet Przyrodniczy | Sztuczna Inteligencja w Inżynierii</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        // Ukryj wszystkie sekcje
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // Usuń klasę active z linków nawigacji
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // Pokaż wybraną sekcję
+        document.getElementById(sectionId).classList.add('active');
+        
+        // Dodaj klasę active do klikniętego linku
+        document.getElementById('nav-' + sectionId).classList.add('active');
+
+        // Przewiń na górę strony
+        window.scrollTo(0, 0);
+    }
+</script>
+
+</body>
+</html>
